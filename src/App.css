@@ -1,0 +1,150 @@
+/* ------------- General Reset and Layout ------------- */
+#root{
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #989898;
+  --webkit-box-sizing: border-box;
+}
+
+.app-container {
+  width: 55vw;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.skibidi {
+  display: flex;
+  width: 100%;
+  content: "";
+  min-height: 100vh;
+  background-color: #989898;
+  overflow-x:hidden; 
+  max-width: 100%;
+}
+
+/* ------------- Header ------------- */
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* ------------- Filters Section ------------- */
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.filters label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.filters select,
+.filters input {
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ------------- Autocomplete Input ------------- */
+.autocomplete input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box; 
+}
+
+/* ------------- Content Layout ------------- */
+.content-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  min-height: 500px;
+  content: "";
+  background-color: #c6c6c6;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* ------------- Book List ------------- */
+.list-container {
+  flex: 0 0 100%;
+}
+
+.book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  width: 100% - 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  word-wrap: break-word; 
+}
+
+.book-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f1faff;
+}
+
+.book-item strong {
+  color: #4a90e2;
+}
+
+/* ------------- Book Details -------------  */
+.detail-container {
+  flex: 0 0 45%;
+}
+
+.boksigma{
+  padding-top: 30px;
+}
+
+.book-detail {
+  padding: 20px;
+  background: #f0f8ff;
+  border: 1px solid #cce7ff;
+  box-sizing: border-box; 
+  height: 90vh;
+}
+
+.book-detail h2 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.book-detail p {
+  font-size: 14px;
+  margin: 5px 0;
+  word-wrap: break-word; 
+}
+
+.book-detail strong {
+  font-weight: bold;
+}
